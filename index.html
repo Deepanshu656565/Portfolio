@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deepanshu Gupta | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #0f172a;
+      color: #e2e8f0;
+      font-family: 'Fira Code', monospace;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    .background-animation {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: radial-gradient(#1e293b 1px, transparent 1px);
+      background-size: 20px 20px;
+      z-index: -1;
+      animation: moveGrid 10s linear infinite;
+    }
+    @keyframes moveGrid {
+      0% {background-position: 0 0;}
+      100% {background-position: 20px 20px;}
+    }
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #38bdf8;
+    }
+    .section-subtitle {
+      font-size: 1rem;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body class="relative">
+  <div class="background-animation"></div>
+
+  <header class="fixed top-0 left-0 right-0 bg-gray-900 bg-opacity-90 shadow-md z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold text-blue-400">Deepanshu Gupta</h1>
+      <nav class="space-x-6">
+        <a href="#about" class="hover:text-blue-500">About</a>
+        <a href="#skills" class="hover:text-blue-500">Skills</a>
+        <a href="#education" class="hover:text-blue-500">Education</a>
+        <a href="#projects" class="hover:text-blue-500">Projects</a>
+        <a href="#contact" class="hover:text-blue-500">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="min-h-screen flex items-center justify-center flex-col text-center px-4 pt-32">
+    <h2 class="text-5xl font-bold text-blue-300 mb-4">Hi, I'm Deepanshu</h2>
+    <p class="text-lg max-w-2xl">A CSE(AI) Student passionate about building scalable software and mastering DSA & AI with a creative, minimal mindset.</p>
+    <a href="#contact" class="mt-8 px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700">Let's Work Together</a>
+  </section>
+
+  <section id="about" class="py-24 text-center">
+    <h3 class="section-title mb-4">About Me</h3>
+    <p class="max-w-3xl mx-auto text-lg">I'm currently pursuing B.Tech in CSE with AI at NIET, Greater Noida. I'm enthusiastic about AI, full-stack development, and clean design. I enjoy transforming ideas into real, interactive applications.</p>
+  </section>
+
+  <section id="skills" class="py-24 bg-gray-900 text-center">
+    <h3 class="section-title mb-4">Skills</h3>
+    <p class="section-subtitle mb-8">Technologies I work with</p>
+    <div class="max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+      <div class="bg-gray-800 p-4 rounded shadow">Python</div>
+      <div class="bg-gray-800 p-4 rounded shadow">C</div>
+      <div class="bg-gray-800 p-4 rounded shadow">DSA</div>
+      <div class="bg-gray-800 p-4 rounded shadow">MongoDB</div>
+      <div class="bg-gray-800 p-4 rounded shadow">Express.js</div>
+      <div class="bg-gray-800 p-4 rounded shadow">React.js</div>
+      <div class="bg-gray-800 p-4 rounded shadow">Node.js</div>
+      <div class="bg-gray-800 p-4 rounded shadow">AI/ML</div>
+    </div>
+  </section>
+
+  <section id="education" class="py-24 text-center">
+    <h3 class="section-title mb-4">Education</h3>
+    <div class="max-w-3xl mx-auto space-y-6">
+      <div class="border-l-4 border-blue-400 pl-4 text-left">
+        <h4 class="text-xl font-bold text-white">B.Tech in CSE (AI)</h4>
+        <p>Noida Institute of Engineering and Technology, Expected July 2027</p>
+      </div>
+      <div class="border-l-4 border-blue-400 pl-4 text-left">
+        <h4 class="text-xl font-bold text-white">Intermediate (Class 12)</h4>
+        <p>Passed in 2022 with 92%</p>
+      </div>
+      <div class="border-l-4 border-blue-400 pl-4 text-left">
+        <h4 class="text-xl font-bold text-white">High School (Class 10)</h4>
+        <p>Passed in 2020 with 85.6%</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-24 text-center">
+    <h3 class="section-title mb-4">Contact</h3>
+    <p class="section-subtitle mb-8">Let's collaborate on something amazing!</p>
+    <form action="https://formspree.io/f/mnqeozjj" method="POST" class="max-w-xl mx-auto space-y-4">
+      <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 rounded bg-gray-800 border border-gray-600">
+      <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 rounded bg-gray-800 border border-gray-600">
+      <textarea name="message" rows="5" placeholder="Your Message" required class="w-full p-3 rounded bg-gray-800 border border-gray-600"></textarea>
+      <button type="submit" class="px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="bg-gray-900 text-center text-gray-400 p-6">
+    <p>&copy; 2025 Deepanshu Gupta — Inspired by <a href="https://www.benrogers.dev" class="text-blue-400" target="_blank">Ben Rogers</a></p>
+  </footer>
+</body>
+</html>
